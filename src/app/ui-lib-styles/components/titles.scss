@@ -1,0 +1,6 @@
+@use "../variables" as *;
+
+main h2 {
+  font-size: $font-size-xl;
+  margin-bottom: 1rem;
+}

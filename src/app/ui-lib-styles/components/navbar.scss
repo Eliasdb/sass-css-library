@@ -1,0 +1,37 @@
+@use "../variables" as *;
+
+%flex-layout {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.navbar {
+  @extend %flex-layout;
+  padding: $base-padding $base-padding * 2;
+  box-shadow: $base-box-shadow;
+  .site-title {
+    font-size: $font-size-lg;
+  }
+  .container {
+    @extend %flex-layout;
+  }
+}
+
+// @function text-clr($color) {
+//   @if (lightness($color) > 50) {
+//     @return #000;
+//   } @else {
+//     @return #fff;
+//   }
+// }
+
+@each $key, $val in $colours {
+  .navbar-#{$key} {
+    @extend .navbar;
+    background-color: $val;
+    // color: text-clr($val);
+  }
+}
