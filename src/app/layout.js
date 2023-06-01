@@ -1,3 +1,4 @@
+import Head from "next/head";
 import "./globals.css";
 
 export const metadata = {
@@ -8,9 +9,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
+      <Head>
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-      </head>
+      </Head>
       <body className="">{children}</body>
     </html>
   );
