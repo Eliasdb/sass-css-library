@@ -19,4 +19,6 @@ Also made a small demo page with the classes I made with SASS.
 
 `npm i && npm run dev`
 
+Note: Still need to purge unused CSS classes!
+
 ## [Live](https://octane-css-library.netlify.app)
